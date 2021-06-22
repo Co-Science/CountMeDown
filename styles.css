@@ -18,7 +18,7 @@
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
 
-    background-color: #3c3c3c;
+    background-color: hsl(218, 74%, 6%);
     display: flex;
     font-family: -apple-system, 
       BlinkMacSystemFont, 
