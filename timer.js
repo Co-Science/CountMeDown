@@ -4,7 +4,7 @@
           hour = minute * 60,
           day = hour * 24;
   
-    let TheBigEvent = "Jun 24 2021 20:30:00",
+    let TheBigEvent = "Jun 23 2021 16:51:40",
         countDown = new Date(TheBigEvent).getTime(),
         x = setInterval(function() {    
   

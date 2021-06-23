@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./timer.js"></script>
     <link rel="stylesheet" href="./styles.css">
-    <link rel = "icon" href = 
-    "./resources/img/win-11-logo.jpg" 
-            type = "image/x-icon">
+    <link rel = "icon" href = "./resources/img/win-11-logo.jpg" type = "image/x-icon">
+    <link rel="apple-touch-icon" href="./resources/img/win-11-logo.jpg">
     <title>Windows!!Event: possibly</title>
+
+    <meta name="theme-color" content="#317EFB"/>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="manifest" href="manifest.json">
+    
+
 </head>
 <body>
   <div class="bg-img"></div>
@@ -30,10 +34,16 @@
     </div>
   </div> 
   
-  <audio autoplay controls loop>
+  <audio controls loop>
     <source src="./resources/audio/microsoftTime.mp3" type="audio/mp3">
     <embed src="./resources/audio/microsoftTime.mp3" loop="true" autostart="true" width="2" height="0">
     <p>If you are reading this, it is because your browser does not support the audio element.     </p>
-    </audio>   
+  </audio>   
+  <script src="./timer.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+    }
+  </script>
 </body>
 </html>

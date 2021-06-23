@@ -1,0 +1,49 @@
+{
+    "name": "Windows11 Event Countdown",
+    "short_name": "Win11 Event",
+    "start_url": "/?home=true",
+    "shortcuts": [
+      {
+        "name": "Activity Feed",
+        "short_name": "Feed",
+        "description": "View your activity feed",
+        "url": "/feed?utm_source=homescreen",
+        "icons": [{ "src": "/icons/feed.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Recent Comments",
+        "short_name": "Comments",
+        "description": "View recent comments",
+        "url": "/comments?utm_source=homescreen",
+        "icons": [{ "src": "/icons/comments.png", "sizes": "192x192" }]
+      }
+    ],
+    "icons": [
+      {
+        "src": "./resources/img/win-11-logo-manifest.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "share_target": {
+      "action": "/share-photo",
+      "method": "POST",
+      "enctype": "multipart/form-data",
+      "params": {
+        "title": "name",
+        "text": "description",
+        "url": "link",
+        "files": [
+          {
+            "name": "photos",
+            "accept": "image/png"
+          }
+        ]
+      }
+    },
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "orientation": "portrait"
+  }

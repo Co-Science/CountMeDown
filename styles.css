@@ -15,8 +15,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
 
     background-color: hsl(218, 74%, 6%);
     display: flex;
@@ -32,12 +30,15 @@
   }
   
   .container {
-    color: rgba(242, 222, 74, 0.741);
     margin: 0 auto;
     text-align: center;
+    
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
   }
   
   h1 {
+    
     font-weight: normal;
     letter-spacing: .125rem;
     text-transform: uppercase;
@@ -47,6 +48,7 @@
   }
   
   li {
+    
     display: inline-block;
     font-size: 1.5em;
     list-style-type: none;
