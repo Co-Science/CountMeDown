@@ -22,7 +22,7 @@
                 countdown = document.getElementById("countdown"),
                 content = document.getElementById("content");
   
-            headline.innerText = "Pixel launch time:";
+            headline.innerText = "Pixel launch time!";
             countdown.style.display = "none";
             content.style.display = "block";
   
