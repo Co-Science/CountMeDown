@@ -4,7 +4,7 @@
           hour = minute * 60,
           day = hour * 24;
   
-    let TheBigEvent = "Oct 05 2021 20:30:00",
+    let TheBigEvent = "Oct 19 2021 10:00:00",
         countDown = new Date(TheBigEvent).getTime(),
         x = setInterval(function() {    
   
@@ -22,7 +22,7 @@
                 countdown = document.getElementById("countdown"),
                 content = document.getElementById("content");
   
-            headline.innerText = "It's TheBigEvent!";
+            headline.innerText = "Pixel launch time:";
             countdown.style.display = "none";
             content.style.display = "block";
   
