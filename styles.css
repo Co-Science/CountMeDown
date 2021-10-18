@@ -11,7 +11,7 @@
   }
   body {
     align-items: center;
-    background-image: url('./resources/img/Pixel-6-Launch.jpg');
+    background-image: url('./resources/img/Pixel-6-Launch.jpg') !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
